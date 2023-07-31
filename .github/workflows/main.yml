@@ -22,8 +22,8 @@ jobs:
 
       - name: Update branches
         run: |   
-          git config --global user.email "<your email here>"
-          git config --global user.name "<your username here>"
+          git config --global user.email "anirudhaanekal@gmail.com"
+          git config --global user.name "Wambyat"
           while read -r branch; do
             git checkout $branch
             git merge origin/main --no-edit

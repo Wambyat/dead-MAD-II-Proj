@@ -55,8 +55,8 @@ var app = new Vue({
         }
     }
 })
-// let message = "After vue-ing"
 
+// let message = "After vue-ing"
 // var app = new Vue({
 //     el: "#app",
 //     data: {

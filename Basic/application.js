@@ -1,4 +1,6 @@
-Vue.component('message-board',{
+// import Vue from 'vue'
+
+const MessageBoard = Vue.component('message-board',{
     template : `
     <div v-if="trigger == false">
     <p >Before vue's nonsense</p>
@@ -44,8 +46,36 @@ Vue.component('message-board',{
     }
 })
 
+const AboutPage = Vue.component('about',{
+    template : `
+    <h1> ABOUT </h1>
+    `
+})
+
+const ContactPage = Vue.component('contact',{
+    template : `
+    <h1> CONTACT </h1>
+    `
+})
+
+const routes = [{
+    path : '/',
+    component : MessageBoard
+}, {
+    path : '/about',
+    component : AboutPage
+}, {
+    path : '/contact',
+    component : ContactPage
+}];
+
+const router = new VueRouter({
+    routes
+})
+
 var app = new Vue({
     el: "#app",
+    router: router,
     data: {
         allNames : []
     },

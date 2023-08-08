@@ -30,6 +30,24 @@ const MessageBoard = Vue.component('message-board',{
         clickFunc: function(){
             this.message = "Vue is fun! Also hi!"+this.name
             this.trigger = true
+            fetch('http://127.0.0.1:5000/testdb', {
+                headers : {
+                    'Content-Type' : 'application/json'
+                },
+                method : 'POST',
+                body : JSON.stringify( {
+                    'type' : 'add',
+                    'table' : 'testtable',
+                    'values' : ['1','Ani','22']
+                })
+            })
+            .then(function (response) {
+                return response.json();
+            }).then(function (text) {
+                console.log('GET response:');
+                console.log(text); 
+            });
+            
             this.names.push(this.name)
             this.$emit('add-name',this.name)
             this.name = ""

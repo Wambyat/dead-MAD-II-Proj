@@ -1,21 +1,9 @@
 <template>
     <div id="app">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">bookMyRipOff</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <router-link
@@ -33,6 +21,15 @@
                                 aria-current="page"
                                 href="#"
                                 >About</router-link
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <router-link
+                                to="/login"
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Login</router-link
                             >
                         </li>
                     </ul>
@@ -53,7 +50,7 @@
     </div>
 </template>
 
-<style>
+<!-- <style>
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -65,12 +62,11 @@
         font-weight: bold;
         color: aquamarine;
     }
-</style>
+</style> -->
 
 <script>
-    import './App.css';
-
+    import "./App.css";
     export default {
-        name: 'App',
+        name: "App",
     };
 </script>

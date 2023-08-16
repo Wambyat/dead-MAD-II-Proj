@@ -3,8 +3,6 @@
 
 ### Dont see/use this code as the code is extremly incomplete
 
-# MAD II Proj
-
 ### Things to remeber
 
 - Flask for API calls

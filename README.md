@@ -1,4 +1,4 @@
-#THIS PROJECT IS DEAD AND WILL BE REMADE NEXT SEMESTER. 
+# THIS PROJECT IS DEAD AND WILL BE REMADE NEXT SEMESTER. 
 
 ### Dont see/use this code as the code is extremly incomplete
 
